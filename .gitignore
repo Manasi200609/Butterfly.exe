@@ -1,0 +1,43 @@
+
+node_modules/
+.env
+uploads/*
+!uploads/.gitkeep
+server/uploads/*
+!server/uploads/.gitkeep
+coverage/
+client/dist/
+
+/devpost/learner-profile.md
+.env.*
+!.env.example
+
+# Local dependencies and package caches
+node_modules/
+.pnpm-store/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.*.example
+
+# Local AI coding-agent configuration and skills
+.agents/
+.claude/
+skills-lock.json
+
+# Generated demo-video assets and renders
+butterfly-appshot-video/
+
+# Local logs and operating-system files
+*.log
+.DS_Store
+Thumbs.db
+
+# Local agent skill instructions
+/agent/

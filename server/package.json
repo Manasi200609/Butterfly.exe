@@ -1,0 +1,28 @@
+{
+  "name": "brieflyai-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Butterfly.exe deterministic consequence discovery simulation API",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "test": "node --test",
+    "check": "node --check src/server.js && node --check src/app.js && node --check src/simulation/engine.js && node --check src/simulation/surpriseDetector.js && node --check src/simulation/worlds/city.js && node --check src/simulation/worlds/ecosystem.js && node --check src/simulation/worlds/unknown.js && node --check src/services/experimentRepository.js && node --check src/services/simulationAi.service.js && node --check src/controllers/simulation.controller.js && node --check src/routes/simulation.routes.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@google/genai": "^1.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "mongoose": "^8.24.7",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

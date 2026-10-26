@@ -1,0 +1,11 @@
+const router = require("express").Router();
+const controller = require("../controllers/simulation.controller");
+router.get("/worlds", controller.listWorlds);
+router.get("/worlds/:world", controller.getWorld);
+router.post("/experiments", controller.createExperiment);
+router.get("/experiments/recent", controller.recent);
+router.get("/experiments/:id/comparison", controller.getComparison);
+router.get("/experiments/:id", controller.getExperiment);
+router.post("/suggestions", controller.suggestions);
+router.post("/explanations", controller.explain);
+module.exports = router;
