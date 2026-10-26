@@ -1,4 +1,4 @@
-# Butterfly.exe 🦋
+# Butterfly.exe 
 ### Discover the consequences before they happen.
 
 Butterfly.exe is an interactive consequence-discovery simulator that lets users change conditions in interconnected systems, run experiments, and compare outcomes. Instead of passively viewing predictions, users can intervene and observe what happens next.
